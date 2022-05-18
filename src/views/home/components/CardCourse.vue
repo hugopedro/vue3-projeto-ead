@@ -23,9 +23,15 @@
 
 const props = defineProps({
 
-  title: () => [],
-  image: () => [],
-  bgName: () => []
+  title: {
+    type: String,
+  },
+  image: {
+    type: String,
+  },
+  bgName: {
+    type: String,
+  },
 });
 
 </script>
