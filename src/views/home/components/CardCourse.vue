@@ -7,7 +7,10 @@
       </span>
       <span class="title">{{ props.title }}</span>
       <span class="action">
-        <a href="trainings.html" :class="['btn', props.bgName]">Acessar</a>
+        <!-- <a href="trainings.html" :class="['btn', props.bgName]">Acessar</a> -->
+        <router-link :to="{ name: 'campus.modules' }" :class="['btn', props.bgName]">
+          Acessar
+        </router-link>
       </span>
     </span>
     <span class="dots">
