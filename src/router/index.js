@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/home/Home.vue'
 import MySupports from '@/views/supports/MySupports.vue'
 import ModulesAndLessons from '@/views/modules/ModulesAndLessons.vue'
+import Auth from '../views/auth/Auth.vue'
+import ForgetPassword from '../views/auth/ForgetPassword.vue'
 
 const routes = [
   {
@@ -22,9 +24,18 @@ const routes = [
         path: '',
         name: 'campus.home',
         component: Home
-      }
+      },
     ]
-  }
+  },
+  {
+    path: '/',
+    name: 'auth',
+    component: Auth
+  }, {
+    path: '/recuperar-senha',
+    name: 'forget.password',
+    component: ForgetPassword
+  },
 ]
 
 const router = createRouter({
